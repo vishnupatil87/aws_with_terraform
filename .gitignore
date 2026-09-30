@@ -1,0 +1,83 @@
+C:\aws_with_terraform_july_batch\Day-01\.terraform
+C:\aws_with_terraform_july_batch\Day-01\.terraform.lock.hcl
+Day-01/terraform.tfstate
+Day-01/.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/windows_amd64/terraform-provider-aws_v6.65.0_x5.exe
+Day-01/.terraform.lock.hcl
+        new file:   Day-01/.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/windows_amd64/LICENSE.txt
+
+        # ------------------------------------------------------------------------
+# Official Terraform .gitignore Template
+# ------------------------------------------------------------------------
+
+# Local .terraform directories (contains downloaded plugins and modules)
+**/.terraform/*
+
+# .tfstate files (Contains sensitive, cleartext infrastructure data)
+# Note: Use a remote backend (S3, Azure Blob, Terraform Cloud) instead of Git.
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all variable files by default as they typically contain secrets
+
+*.tfvars.json
+
+# Ignore override files as they are used locally to override resources
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+*tfplan*
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+Day-01/.terraform.lock.hcl
+Day-02/.terraform.lock.hcl
+Day-03/.terraform.lock.hcl
+
+*/.terraform.lock.hcl
+
+Day-04/remote-exec/.terraform.lock.hcl
+C:\aws_with_terraform_april_batch\Day-04\remote-exec\.terraform.lock.hcl
+C:\aws_with_terraform_april_batch\Day-04\file-provisnors\custom-key.pem
+C:\aws_with_terraform_april_batch\Day-04\local-provisioner\.terraform.lock.hcl
+C:\aws_with_terraform_april_batch\Day-04\file-provisnors\.terraform.lock.hcl
+
+C:\aws_with_terraform_april_batch\workspace\.terraform.lock.hcl
+
+C:\aws_with_terraform_april_batch\workspace\.terraform
+C:\aws_with_terraform_april_batch\environments\Storage\S3\dev\.terraform
+C:\aws_with_terraform_april_batch\environments\Storage\S3\dev\.terraform.lock.hcl
+environments/Storage/S3/dev/.terraform.lock.hcl
+
+C:\aws_with_terraform_april_batch\environments\Networking\VPC\dev\.terraform
+
+C:\aws_with_terraform_april_batch\environments\Networking\VPC\dev\.terraform.lock.hcl
+
+C:\aws_with_terraform_april_batch\environments\Networking\VPC\dev\.terraform.lock.hcl
+
+C:\aws_with_terraform_april_batch\environments\Compute\EC2\dev\.terraform
+C:\aws_with_terraform_april_batch\environments\Compute\EC2\dev\.terraform.lock.hcl
+C:\aws_with_terraform_april_batch\environments\Networking\VPC\dev\.terraform
+C:\aws_with_terraform_april_batch\environments\Networking\VPC\qa\.terraform
+C:\aws_with_terraform_april_batch\environments\Networking\VPC\uat\.terraform
+
+C:\aws_with_terraform_july_batch\Day-02\.terraform
+C:\aws_with_terraform_july_batch\Day-02\.terraform.lock.hcl
+C:\aws_with_terraform_july_batch\Day-03\.terraform
+C:\aws_with_terraform_july_batch\Day-03\.terraform.lock.hcl
+C:\aws_with_terraform_july_batch\environments\networking\VPC\dev\.terraform\*
+C:\aws_with_terraform_july_batch\environments\networking\VPC\dev\.terraform.lock.hcl
+C:\aws_with_terraform_july_batch\environments\networking\VPC\dev\errored.tfstate
+C:\aws_with_terraform_july_batch\environments\compute\EC2\dev\.terraform
+C:\aws_with_terraform_july_batch\environments\compute\EC2\dev\*
+environments/compute/EC2/dev/.terraform.lock.hcl
