@@ -9,7 +9,7 @@ variable "project_name" {
 
 variable "ami_id" {
   type = string 
-  default = "ami-07a00cf47dbbc844c"
+  default = "ami-01a00762f46d584a1"
 }
 
 variable "instance_type" {
@@ -20,7 +20,7 @@ variable "instance_type" {
 variable "key_name" {
   sensitive = true
   type = string
-  default = "fctp-key-new"
+  default = "patil-key-pair"
 }
 
 
