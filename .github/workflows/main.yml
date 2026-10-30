@@ -1,0 +1,10 @@
+name: hello this is vishnu patil from udgir github action
+on:
+  workflow_dispatch:
+
+jobs:
+  say-hello-inline:
+  runs-on: ubuntu-latest
+  steps:
+    -name: say hii vishnu
+    run: echo "hello this is vishnu patil"
