@@ -1,0 +1,35 @@
+name: github action var scope 
+
+on: 
+  workflow_dispatch:
+env:
+  WORKFLOW_VAR: I_AM_WORKFLOW_SCOPED
+jobs:
+  job1: 
+    runs-on: ubuntu-22.04
+    env:
+      JOB1_VAR: I_AM_JOB1_SCOPED
+    steps: 
+      - name: inspect scopes job 1 step 1
+        env: 
+          STEP1_VAR: I_AM_STEP1_SCOPED
+        run: |
+          echo "WORKFLOW_VAR:  $WORKFLOW_VAR" 
+          echo "JOB1_VAR: $JOB1_VAR"
+          echo "STEP1_VAR: $STEP1_VAR"
+        
+      - name: inspect scopes job 1 step 2
+        run: |
+          echo "WORKFLOW_VAR:  $WORKFLOW_VAR" 
+          echo "JOB1_VAR: $JOB1_VAR"
+          echo "STEP1_VAR: ${STEP1_VAR:-<UNSET>}"
+
+
+  job2: 
+    runs-on: ubuntu-22.04
+    steps: 
+      - name: inspect scopes job 2 
+        run: |
+          echo "WORKFLOW_VAR:  $WORKFLOW_VAR" 
+          echo "JOB1_VAR: ${JOB1_VAR:-<UNSET>}"
+          echo "STEP1_VAR: ${STEP1_VAR:-<UNSET>}"
