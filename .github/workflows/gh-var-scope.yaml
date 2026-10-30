@@ -18,7 +18,7 @@ jobs:
           echo "JOB1_VAR: $JOB1_VAR"
           echo "STEP1_VAR: $STEP1_VAR"
         
-      - name: inspect scopes job 1 step 2
+      - name: inspect scopes job 2 
         run: |
           echo "WORKFLOW_VAR:  $WORKFLOW_VAR" 
           echo "JOB1_VAR: $JOB1_VAR"
